@@ -8,7 +8,7 @@ The following functions are implemented:
 ### Installation
 
 ``` r
-devtools::install_github("hrbrmstr/hping")
+devtools::install_github("brudis-r7/hping")
 ```
 
 ### Usage
@@ -31,7 +31,7 @@ library(testthat)
 date()
 ```
 
-    ## [1] "Thu Sep  1 10:21:10 2016"
+    ## [1] "Thu Sep  1 10:24:55 2016"
 
 ``` r
 extract_uptime(system.file("extdata", "sample.hping3.output.txt.gz", package="hping"))
