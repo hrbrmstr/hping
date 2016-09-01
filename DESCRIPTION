@@ -1,0 +1,21 @@
+Package: hping
+Type: Package
+Title: Utilities to Work with 'hping' Output
+Version: 0.1.0
+Date: 2016-09-01
+Author: Bob Rudis (brudis@rapid7.com)
+Maintainer: Bob Rudis <bob@rudis.net>
+Description: Utilities to work with 'hping' output.
+URL: http://github.com/brudis-r7/hping
+BugReports: https://github.com/brudis-r7/hping/issues
+License: MIT
+Suggests:
+    testthat
+Depends:
+    R (>= 3.0.0)
+Imports:
+    purrr,
+    stringi,
+    readr,
+    dplyr
+RoxygenNote: 5.0.1

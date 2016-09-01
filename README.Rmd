@@ -1,0 +1,43 @@
+---
+output: rmarkdown::github_document
+---
+
+`hping` : Utilities to work with `hping` output in R
+
+The following functions are implemented:
+
+- `extract_uptime`: Extract uptime from an `hping3` output dump
+
+### Installation
+
+```{r eval=FALSE}
+devtools::install_github("hrbrmstr/hping")
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, error=FALSE}
+options(width=120)
+```
+
+### Usage
+
+```{r message=FALSE, warning=FALSE}
+library(hping)
+
+# current verison
+packageVersion("hping")
+
+```
+
+### Test Results
+
+```{r message=FALSE, warning=FALSE}
+library(hping)
+library(testthat)
+
+date()
+
+extract_uptime(system.file("extdata", "sample.hping3.output.txt.gz", package="hping"))
+
+test_dir("tests/")
+```
+
